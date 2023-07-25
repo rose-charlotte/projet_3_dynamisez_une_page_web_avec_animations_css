@@ -1,1 +1,27 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  display: flex;
+  flex-direction: column;
+  margin: unset;
+  padding: unset;
+}
+
+.header {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo img {
+  width: 162px;
+  height: 36px;
+  padding-left: 16px;
+  padding-right: 19px;
+  margin: 14px 89px 13px;
+}
+
+.location {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  background: linear-gradient(#cac6c6, #EAEAEA 9%);
+}/*# sourceMappingURL=main.css.map */
