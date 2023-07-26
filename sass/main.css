@@ -5,6 +5,20 @@ body {
   padding: unset;
 }
 
+.mainButton {
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(#ff79da, #9356DC);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.mainButton:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
 .header {
   font-family: "Roboto", sans-serif;
 }
@@ -24,4 +38,36 @@ body {
   justify-content: center;
   gap: 17px;
   background: linear-gradient(#cac6c6, #EAEAEA 9%);
+}
+
+.main {
+  font-family: "Roboto", sans-serif;
+}
+
+.book {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 57px;
+}
+
+.mainTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: unset;
+  padding-top: 40px;
+  margin-left: 42px;
+  margin-right: 58px;
+}
+
+.book p {
+  margin: 10px 20px 27px 34px;
+}
+
+.book .mainButton {
+  width: 218px;
+  padding: 13px 19px;
 }/*# sourceMappingURL=main.css.map */

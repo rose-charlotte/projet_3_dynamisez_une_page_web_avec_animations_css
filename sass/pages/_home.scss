@@ -1,0 +1,31 @@
+.main{
+    font-family: $font-text;
+}
+
+.book{
+    background-color: $background-light-grey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 57px;
+}
+
+.mainTitle{
+    font-size: 24px;
+    font-weight: 700;
+    margin: unset;
+    padding-top: 40px;
+    margin-left: 42px;
+    margin-right: 58px;
+}
+
+.book p{
+margin: 10px 20px 27px 34px ;
+}
+
+.book .mainButton{
+    width:218px;
+    padding: 13px 19px;
+}
