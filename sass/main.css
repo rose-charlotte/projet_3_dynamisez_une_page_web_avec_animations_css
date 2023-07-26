@@ -15,9 +15,6 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
-.mainButton:hover {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-}
 
 .header {
   font-family: "Roboto", sans-serif;
@@ -44,6 +41,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.mainTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: unset;
+}
+
+/***** Section book  *****/
 .book {
   background-color: #f6f6f6;
   display: flex;
@@ -54,10 +58,7 @@ body {
   padding-bottom: 57px;
 }
 
-.mainTitle {
-  font-size: 24px;
-  font-weight: 700;
-  margin: unset;
+.book .mainTitle {
   padding-top: 40px;
   margin-left: 42px;
   margin-right: 58px;
@@ -70,4 +71,60 @@ body {
 .book .mainButton {
   width: 218px;
   padding: 13px 19px;
+}
+
+/***** Section fonctionnement *****/
+.info ul {
+  margin: unset;
+  padding: unset;
+}
+
+.info .mainTitle {
+  margin: 48px 80px 26px 20px;
+}
+
+.circle {
+  background-color: #9356DC;
+  color: white;
+  font-size: 14px;
+  border-radius: 25px;
+  padding-left: 3px;
+  padding-right: 2px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding-top: 5px;
+  margin-left: -15px;
+}
+
+.info__list {
+  display: flex;
+  align-items: center;
+  margin-left: 33px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  list-style-type: none;
+  width: 323px;
+  height: 72px;
+  background-color: #f6f6f6;
+}
+.info__list__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 27px;
+  padding-left: 33px;
+}
+
+.fa-mobile-screen-button,
+.fa-list-ul {
+  color: #7e7e7e;
+}
+
+.fa-store {
+  color: #9356DC;
 }/*# sourceMappingURL=main.css.map */
