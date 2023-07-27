@@ -1,0 +1,183 @@
+.main{
+    font-family: $font-text;
+}
+
+.mainTitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin: unset;
+}
+
+/***** Section book  *****/
+.book{
+    background-color: $background-light-grey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 57px;
+}
+
+.book .mainTitle{
+    padding-top: 40px;
+    margin-left: 42px;
+    margin-right: 58px;
+}
+
+
+.book p{
+margin: 10px 20px 27px 34px ;
+}
+
+.book .mainButton{
+    width:218px;
+    padding: 13px 19px;
+}
+
+/***** Section fonctionnement *****/
+
+.info ul{
+    margin: unset;
+    padding: unset;
+}
+
+.info .mainTitle{
+    margin: 48px 80px 26px 20px;
+}
+
+.circle {
+    background-color: $purple;
+    color:$white;
+    font-size: 14px;
+    border-radius: 25px;
+    padding-left: 3px;
+    padding-right: 2px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding-top: 5px;
+    margin-left: -15px;
+}
+
+.info__list{
+    display: flex;
+    align-items: center;
+    margin-left: 33px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    list-style-type: none;
+    width: 323px;
+    height: 72px;
+    background-color: $background-light-grey;
+    
+    &__text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 27px;
+        padding-left: 33px;
+    }
+}
+
+.fa-mobile-screen-button, 
+.fa-list-ul{
+    color: #7e7e7e;
+}
+
+.fa-store{
+    color: $purple;
+}
+
+
+/***** Section Restaurants *****/
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: $background-light-grey;
+    gap: 18px;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   width: 340px;
+   height: 251px;
+   background-color: $white;
+   border-radius:15px; 
+   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+
+   &__info-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   }
+
+   &__info{
+    display: flex;
+    flex-direction: column;
+    padding-top:16px;
+    padding-left: 13px;
+    gap:5px;
+   }
+
+   &__info h2,
+   &__info p {
+       margin: unset;
+   }
+
+   &__icon{
+    padding: 23px 25px 33px;
+    background-color: $white;
+    border: none;
+   }
+
+
+   &__image{
+    width: 340px;
+    height: 171px;
+   }
+
+   &__image-horizontal {
+       width: 91%;
+       object-fit: contain;
+       position: absolute;
+       clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
+       margin-top: -60px;
+   }
+
+   &__image-vertical{
+        width: 91%;
+        object-fit: contain;
+        position: absolute;
+        clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
+        margin-top: -160px;
+   }
+
+}
+
+.new{
+    background-color: $light-green;
+    color: $dark-green;
+    padding: 7px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 1;
+    position: relative;
+    top: 12px;
+    left: 250px;
+}
+
+.heart{
+    background: linear-gradient($purple, $pink);
+}
+
+
