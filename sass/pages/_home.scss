@@ -102,6 +102,7 @@ margin: 10px 20px 27px 34px ;
     align-content: center;
     flex-wrap: wrap;
     background-color: $background-light-grey;
+    gap: 18px;
 }
 
 .card{
@@ -128,29 +129,39 @@ margin: 10px 20px 27px 34px ;
     gap:5px;
    }
 
+   &__info h2,
+   &__info p {
+       margin: unset;
+   }
+
    &__icon{
     padding: 23px 25px 33px;
-
+    background-color: $white;
+    border: none;
    }
+
 
    &__image{
     width: 340px;
     height: 171px;
    }
 
-}
+   &__image-horizontal {
+       width: 91%;
+       object-fit: contain;
+       position: absolute;
+       clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
+       margin-top: -60px;
+   }
 
-.card__info h2,
-.card__info p{ 
-    margin: unset;
-}
+   &__image-vertical{
+        width: 91%;
+        object-fit: contain;
+        position: absolute;
+        clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
+        margin-top: -160px;
+   }
 
-.card img{
-    width: 91%;
-    object-fit: contain;
-    position: absolute;
-    clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
-    margin-top: -60px;
 }
 
 .new{
@@ -164,4 +175,9 @@ margin: 10px 20px 27px 34px ;
     top: 12px;
     left: 250px;
 }
+
+.heart{
+    background: linear-gradient($purple, $pink);
+}
+
 
