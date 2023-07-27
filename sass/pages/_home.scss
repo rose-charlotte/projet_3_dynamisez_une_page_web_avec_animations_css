@@ -48,7 +48,7 @@ margin: 10px 20px 27px 34px ;
 
 .circle {
     background-color: $purple;
-    color: white;
+    color:$white;
     font-size: 14px;
     border-radius: 25px;
     padding-left: 3px;
@@ -92,3 +92,76 @@ margin: 10px 20px 27px 34px ;
 .fa-store{
     color: $purple;
 }
+
+
+/***** Section Restaurants *****/
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: $background-light-grey;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   width: 340px;
+   height: 251px;
+   background-color: $white;
+   border-radius:15px; 
+   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+
+   &__info-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   }
+
+   &__info{
+    display: flex;
+    flex-direction: column;
+    padding-top:16px;
+    padding-left: 13px;
+    gap:5px;
+   }
+
+   &__icon{
+    padding: 23px 25px 33px;
+
+   }
+
+   &__image{
+    width: 340px;
+    height: 171px;
+   }
+
+}
+
+.card__info h2,
+.card__info p{ 
+    margin: unset;
+}
+
+.card img{
+    width: 91%;
+    object-fit: contain;
+    position: absolute;
+    clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
+    margin-top: -60px;
+}
+
+.new{
+    background-color: $light-green;
+    color: $dark-green;
+    padding: 7px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 1;
+    position: relative;
+    top: 12px;
+    left: 250px;
+}
+

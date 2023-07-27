@@ -127,4 +127,70 @@ body {
 
 .fa-store {
   color: #9356DC;
+}
+
+/***** Section Restaurants *****/
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 251px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.card__info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-left: 13px;
+  gap: 5px;
+}
+.card__icon {
+  padding: 23px 25px 33px;
+}
+.card__image {
+  width: 340px;
+  height: 171px;
+}
+
+.card__info h2,
+.card__info p {
+  margin: unset;
+}
+
+.card img {
+  width: 91%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  -webkit-clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
+          clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
+  margin-top: -60px;
+}
+
+.new {
+  background-color: #99e2d0;
+  color: #008766;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 1;
+  position: relative;
+  top: 12px;
+  left: 250px;
 }/*# sourceMappingURL=main.css.map */
