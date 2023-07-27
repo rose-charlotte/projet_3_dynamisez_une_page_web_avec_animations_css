@@ -37,6 +37,39 @@ body {
   background: linear-gradient(#cac6c6, #EAEAEA 9%);
 }
 
+.footer-container {
+  background-color: #353535;
+  color: white;
+  padding: 22px 25px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: unset;
+  padding: unset;
+}
+
+.list-container p {
+  margin: unset;
+}
+
+.footer-list {
+  list-style-type: none;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  margin: unset;
+  padding-bottom: 16px;
+}
+
 .main {
   font-family: "Roboto", sans-serif;
 }
@@ -137,6 +170,7 @@ body {
   flex-wrap: wrap;
   background-color: #f6f6f6;
   gap: 18px;
+  padding-bottom: 66px;
 }
 
 .card {
