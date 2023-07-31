@@ -181,6 +181,7 @@ body {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 .card__info-container {
   display: flex;
@@ -208,32 +209,31 @@ body {
   height: 171px;
 }
 .card__image-horizontal {
-  width: 91%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  position: absolute;
+  position: relative;
   -webkit-clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
           clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
   margin-top: -60px;
 }
 .card__image-vertical {
-  width: 91%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  position: absolute;
+  position: relative;
   -webkit-clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
           clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
   margin-top: -160px;
 }
-
-.new {
+.card__new {
   background-color: #99e2d0;
   color: #008766;
   padding: 7px 10px;
   font-size: 14px;
   font-weight: 500;
   z-index: 1;
-  position: relative;
+  position: absolute;
   top: 12px;
   left: 250px;
 }
