@@ -176,12 +176,19 @@ margin: 10px 20px 27px 34px ;
     left: 250px;
 }
 
+&__like path{
+    fill:none;
+    stroke: black;
+}
+
+&__like path:hover {
+    fill: url(#gradient);
+    stroke: none;
+
+}
+
 }
 
 
-
-.heart{
-    background: linear-gradient($purple, $pink);
-}
 
 

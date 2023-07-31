@@ -237,7 +237,11 @@ body {
   top: 12px;
   left: 250px;
 }
-
-.heart {
-  background: linear-gradient(#9356DC, #ff79da);
+.card__like path {
+  fill: none;
+  stroke: black;
+}
+.card__like path:hover {
+  fill: url(#gradient);
+  stroke: none;
 }/*# sourceMappingURL=main.css.map */
