@@ -114,6 +114,7 @@ margin: 10px 20px 27px 34px ;
    background-color: $white;
    border-radius:15px; 
    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+   position: relative;
 
    &__info-container{
     display: flex;
@@ -135,11 +136,11 @@ margin: 10px 20px 27px 34px ;
        margin: unset;
    }
 
-   &__icon{
-    padding: 23px 25px 33px;
-    background-color: $white;
-    border: none;
-   }
+//    &__icon{
+//     padding: 23px 25px 33px;
+//     background-color: $white;
+//     border: none;
+//    }
 
 
    &__image{
@@ -148,37 +149,56 @@ margin: 10px 20px 27px 34px ;
    }
 
    &__image-horizontal {
-       width: 91%;
+       width: 100%;
        object-fit: contain;
-       position: absolute;
+       position: relative;
        clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
        margin-top: -60px;
    }
 
    &__image-vertical{
-        width: 91%;
+        width: 100%;
         object-fit: contain;
-        position: absolute;
+        position: relative;
         clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
         margin-top: -160px;
    }
 
-}
-
-.new{
+   &__new {
     background-color: $light-green;
     color: $dark-green;
     padding: 7px 10px;
     font-size: 14px;
     font-weight: 500;
     z-index: 1;
-    position: relative;
+    position: absolute;
     top: 12px;
     left: 250px;
 }
 
-.heart{
-    background: linear-gradient($purple, $pink);
+&__like path{
+    stroke: black;
 }
+&__like path{
+    fill:url(#gradient);
+    transform: scaleY(1);
+    transition: transform 4000ms;
+
+    &:hover{
+    transform: scaleY(1);
+    fill: url(#gradient);
+    stroke:none;
+    }
+            
+ }
+  
+  
+}
+
+
+
+
+
+
 
 
