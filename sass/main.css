@@ -199,11 +199,6 @@ body {
 .card__info h2, .card__info p {
   margin: unset;
 }
-.card__icon {
-  padding: 23px 25px 33px;
-  background-color: white;
-  border: none;
-}
 .card__image {
   width: 340px;
   height: 171px;
@@ -238,10 +233,15 @@ body {
   left: 250px;
 }
 .card__like path {
-  fill: none;
   stroke: black;
 }
+.card__like path {
+  fill: url(#gradient);
+  transform: scaleY(1);
+  transition: transform 4000ms;
+}
 .card__like path:hover {
+  transform: scaleY(1);
   fill: url(#gradient);
   stroke: none;
 }/*# sourceMappingURL=main.css.map */
