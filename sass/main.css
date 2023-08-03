@@ -21,10 +21,12 @@
 }
 @keyframes display {
   from {
-    transform: scale(0);
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
   to {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 body {
@@ -282,11 +284,12 @@ body {
 }
 
 .body {
-  animation: display 5s;
+  animation: display 0s 3s;
+  animation-fill-mode: backwards;
 }
 
 .spinner-container {
-  animation: onScreen 5s;
+  animation: onScreen 3s;
   animation-fill-mode: forwards;
 }
 

@@ -40,10 +40,12 @@ $dark-green: #008766;
 
 @keyframes display{
     from{
-       transform: scale(0);
+    visibility: hidden;
+        width: 0;
+        height: 0;
     }
     to{
-        transform: scale(1);
+        opacity: 1;
     }
 }
 

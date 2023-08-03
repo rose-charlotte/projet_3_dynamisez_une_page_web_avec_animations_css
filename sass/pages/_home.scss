@@ -214,12 +214,14 @@ margin: 10px 20px 27px 34px ;
 //   }
  }
 .body {
-    animation: display 5s;
+    animation: display 0s 3s;
+    animation-fill-mode: backwards;
+
     
 }
 
  .spinner-container{
-    animation:onScreen 5s;
+    animation:onScreen 3s;
     animation-fill-mode: forwards;
    
  }
