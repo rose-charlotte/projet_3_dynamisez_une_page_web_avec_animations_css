@@ -1,4 +1,4 @@
-.main{
+.main {
     font-family: $font-text;
 }
 
@@ -9,7 +9,7 @@
 }
 
 /***** Section book  *****/
-.book{
+.book {
     background-color: $background-light-grey;
     display: flex;
     flex-direction: column;
@@ -19,36 +19,35 @@
     padding-bottom: 57px;
 }
 
-.book .mainTitle{
+.book .mainTitle {
     padding-top: 40px;
     margin-left: 42px;
     margin-right: 58px;
 }
 
-
-.book p{
-margin: 10px 20px 27px 34px ;
+.book p {
+    margin: 10px 20px 27px 34px;
 }
 
-.book .mainButton{
-    width:218px;
+.book .mainButton {
+    width: 218px;
     padding: 13px 19px;
 }
 
 /***** Section fonctionnement *****/
 
-.info ul{
+.info ul {
     margin: unset;
     padding: unset;
 }
 
-.info .mainTitle{
+.info .mainTitle {
     margin: 48px 80px 26px 20px;
 }
 
 .circle {
     background-color: $purple;
-    color:$white;
+    color: $white;
     font-size: 14px;
     border-radius: 25px;
     padding-left: 3px;
@@ -63,7 +62,7 @@ margin: 10px 20px 27px 34px ;
     margin-left: -15px;
 }
 
-.info__list{
+.info__list {
     display: flex;
     align-items: center;
     margin-left: 33px;
@@ -74,8 +73,8 @@ margin: 10px 20px 27px 34px ;
     width: 323px;
     height: 72px;
     background-color: $background-light-grey;
-    
-    &__text{
+
+    &__text {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -84,19 +83,18 @@ margin: 10px 20px 27px 34px ;
     }
 }
 
-.fa-mobile-screen-button, 
-.fa-list-ul{
+.fa-mobile-screen-button,
+.fa-list-ul {
     color: #7e7e7e;
 }
 
-.fa-store{
+.fa-store {
     color: $purple;
 }
 
-
 /***** Section Restaurants *****/
 
-.restaurants{
+.restaurants {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -106,126 +104,107 @@ margin: 10px 20px 27px 34px ;
     padding-bottom: 66px;
 }
 
-.card{
-   display: flex;
-   flex-direction: column;
-   width: 340px;
-   height: 251px;
-   background-color: $white;
-   border-radius:15px; 
-   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-   position: relative;
-
-   &__info-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-   }
-
-   &__info{
+.card {
     display: flex;
     flex-direction: column;
-    padding-top:16px;
-    padding-left: 13px;
-    gap:5px;
-   }
+    width: 340px;
+    height: 251px;
+    background-color: $white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
 
-   &__info h2,
-   &__info p {
-       margin: unset;
-   }
+    &__info-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 
-   &__icon{
-    margin: 23px 25px 33px;
-    background-color: white;
-    border: none;
-    width: 30px;
-    height: 30px;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+        padding-left: 13px;
+        gap: 5px;
+    }
 
-    &:hover {
+    &__info h2,
+    &__info p {
+        margin: unset;
+    }
+
+    &__icon {
+        margin: 23px 25px 33px;
+        background-color: white;
+        border: none;
+        width: 30px;
+        height: 30px;
+
+        &:hover {
             & .heart-like {
                 fill: url(#gradient);
                 animation: fill 2s ease-in-out;
                 animation-fill-mode: both;
             }
-   
-   }
-   }
+        }
+    }
 
-   &__image{
-    width: 340px;
-    height: 171px;
-   }
+    &__image {
+        width: 340px;
+        height: 171px;
+    }
 
-   &__image-horizontal {
-       width: 100%;
-       object-fit: contain;
-       position: relative;
-       clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
-       margin-top: -60px;
-   }
+    &__image-horizontal {
+        width: 100%;
+        object-fit: contain;
+        position: relative;
+        clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
+        margin-top: -60px;
+    }
 
-   &__image-vertical{
+    &__image-vertical {
         width: 100%;
         object-fit: contain;
         position: relative;
         clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
         margin-top: -160px;
-   }
+    }
 
-   &__new {
-    background-color: $light-green;
-    color: $dark-green;
-    padding: 7px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    z-index: 1;
-    position: absolute;
-    top: 12px;
-    left: 250px;
-}
-
-
-
-
-
-
+    &__new {
+        background-color: $light-green;
+        color: $dark-green;
+        padding: 7px 10px;
+        font-size: 14px;
+        font-weight: 500;
+        z-index: 1;
+        position: absolute;
+        top: 12px;
+        left: 250px;
+    }
 }
 
 .body {
-    animation: display 0s 3s;
+    animation: display 0s $spinner-time;
     animation-fill-mode: backwards;
-
-    
 }
 
- .spinner-container{
-    animation:onScreen 3s;
+.spinner-container {
+    animation: onScreen $spinner-time;
     animation-fill-mode: forwards;
     width: 100vw;
     height: 100vh;
-   
- }
-.spinner{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
     width: 100px;
     height: 100px;
     border: 3px solid;
     border-top: black;
     border-radius: 50%;
-    margin-top: 100px;
-    margin-left: 138px;
-    animation: spinner 3s; 
+    animation: spinner 2s linear infinite;
 }
-
-
-
-
-
-
-
-
-
-
-
-

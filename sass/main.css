@@ -15,15 +15,12 @@
   }
   100% {
     visibility: hidden;
-    width: 0;
-    height: 0;
   }
 }
 @keyframes display {
   from {
     visibility: hidden;
-    width: 0;
-    height: 0;
+    display: none;
   }
   to {
     opacity: 1;
@@ -60,7 +57,7 @@ body {
   border: none;
   height: 50px;
   border-radius: 25px;
-  background: linear-gradient(#ff79da, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   color: white;
   font-size: 16px;
@@ -85,7 +82,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 17px;
-  background: linear-gradient(#cac6c6, #EAEAEA 9%);
+  background: linear-gradient(#cac6c6, #eaeaea 9%);
 }
 
 .footer-container {
@@ -168,7 +165,7 @@ body {
 }
 
 .circle {
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   font-size: 14px;
   border-radius: 25px;
@@ -210,7 +207,7 @@ body {
 }
 
 .fa-store {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 /***** Section Restaurants *****/
@@ -306,6 +303,10 @@ body {
   animation-fill-mode: forwards;
   width: 100vw;
   height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .spinner {
@@ -314,7 +315,5 @@ body {
   border: 3px solid;
   border-top: black;
   border-radius: 50%;
-  margin-top: 100px;
-  margin-left: 138px;
-  animation: spinner 3s;
+  animation: spinner 2s linear infinite;
 }/*# sourceMappingURL=main.css.map */

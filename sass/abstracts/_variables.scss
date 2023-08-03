@@ -1,64 +1,59 @@
 // Variables  pour les  fonts family
-$font-text:'Roboto', sans-serif;
-$font-title:'Shrikhand', cursive;
+$font-text: "Roboto", sans-serif;
+$font-title: "Shrikhand", cursive;
 
 // Variables pour  les couleurs
-$white:white;
-$background-dark-grey: #EAEAEA;
+$white: white;
+$background-dark-grey: #eaeaea;
 $background-light-grey: #f6f6f6;
 $background-eavy-grey: #353535;
-$purple: #9356DC;
+$purple: #9356dc;
 $pink: #ff79da;
 $light-green: #99e2d0;
 $dark-green: #008766;
 
+$spinner-time: 3s;
 
-@keyframes spinner{
-    from{
-        transform:rotate(0deg);
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(360deg);
-
     }
 }
 
 @keyframes onScreen {
-    0%{
+    0% {
         opacity: 1;
     }
-    99%{
+    99% {
         opacity: 1;
     }
-    100%{
+    100% {
         visibility: hidden;
-        width: 0;
-        height: 0;
     }
-    
 }
 
-@keyframes display{
-    from{
-    visibility: hidden;
-        width: 0;
-        height: 0;
+@keyframes display {
+    from {
+        visibility: hidden;
+        display: none;
     }
-    to{
+    to {
         opacity: 1;
     }
 }
 
 @keyframes fill {
- from{
-    opacity: 0;
-    stroke: none;
- }
-  to{
-    opacity: 1;
-    stroke: none;
-  }
-    
+    from {
+        opacity: 0;
+        stroke: none;
+    }
+    to {
+        opacity: 1;
+        stroke: none;
+    }
 }
 
 @keyframes fillOut {
@@ -71,6 +66,4 @@ $dark-green: #008766;
         opacity: 0;
         stroke: none;
     }
-
 }
-

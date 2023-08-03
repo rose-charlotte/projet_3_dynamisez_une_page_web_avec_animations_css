@@ -1,10 +1,10 @@
-.footer-container{
+.footer-container {
     background-color: $background-eavy-grey;
     color: $white;
     padding: 22px 25px;
 }
 
-.list-container{
+.list-container {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -12,18 +12,18 @@
     padding: unset;
 }
 
-.list-container p{
+.list-container p {
     margin: unset;
 }
 
-.footer-list{
+.footer-list {
     list-style-type: none;
     display: flex;
     gap: 11px;
     align-items: center;
 }
 
-.logo{
+.logo {
     font-family: $font-title;
     font-size: 18px;
     font-weight: 400;
