@@ -29,6 +29,26 @@
     opacity: 1;
   }
 }
+@keyframes fill {
+  from {
+    opacity: 0;
+    stroke: none;
+  }
+  to {
+    opacity: 1;
+    stroke: none;
+  }
+}
+@keyframes fillOut {
+  from {
+    opacity: 1;
+    stroke: none;
+  }
+  to {
+    opacity: 0;
+    stroke: none;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -231,9 +251,16 @@ body {
   margin: unset;
 }
 .card__icon {
-  padding: 23px 25px 33px;
+  margin: 23px 25px 33px;
   background-color: white;
-  border: 1px solid black;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+.card__icon:hover .heart-like {
+  fill: url(#gradient);
+  animation: fill 2s ease-in-out;
+  animation-fill-mode: both;
 }
 .card__image {
   width: 340px;
@@ -268,20 +295,6 @@ body {
   top: 12px;
   left: 250px;
 }
-.card .heart-like-gradient {
-  opacity: 0;
-  transform: opacity 1s;
-}
-.card .heart-like {
-  transform: scale(1);
-  transition: transform 1s;
-}
-.card__icon:hover .heart-like-gradient {
-  opacity: 1;
-}
-.card__icon:hover .heart-like {
-  transform: scale(0);
-}
 
 .body {
   animation: display 0s 3s;
@@ -291,6 +304,8 @@ body {
 .spinner-container {
   animation: onScreen 3s;
   animation-fill-mode: forwards;
+  width: 100vw;
+  height: 100vh;
 }
 
 .spinner {

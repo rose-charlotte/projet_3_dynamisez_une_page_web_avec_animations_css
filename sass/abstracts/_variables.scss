@@ -49,3 +49,28 @@ $dark-green: #008766;
     }
 }
 
+@keyframes fill {
+ from{
+    opacity: 0;
+    stroke: none;
+ }
+  to{
+    opacity: 1;
+    stroke: none;
+  }
+    
+}
+
+@keyframes fillOut {
+    from {
+        opacity: 1;
+        stroke: none;
+    }
+
+    to {
+        opacity: 0;
+        stroke: none;
+    }
+
+}
+

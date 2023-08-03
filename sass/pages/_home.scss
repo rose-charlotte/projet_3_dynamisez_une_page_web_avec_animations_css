@@ -137,11 +137,21 @@ margin: 10px 20px 27px 34px ;
    }
 
    &__icon{
-    padding: 23px 25px 33px;
-    background-color: $white;
-    border: 1px solid black;
-   }
+    margin: 23px 25px 33px;
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
 
+    &:hover {
+            & .heart-like {
+                fill: url(#gradient);
+                animation: fill 2s ease-in-out;
+                animation-fill-mode: both;
+            }
+   
+   }
+   }
 
    &__image{
     width: 340px;
@@ -176,43 +186,13 @@ margin: 10px 20px 27px 34px ;
     left: 250px;
 }
 
-.heart-like-gradient{
-    opacity: 0;
-    transform: opacity 1s;
+
+
+
+
+
 }
 
-.heart-like{
-    transform: scale(1);
-    transition: transform 1s;
-}
-
-&__icon:hover{
-    & .heart-like-gradient{
-        opacity:1;
-    }
-    & .heart-like{
-        transform: scale(0);
-    }
-}
-
-
-// &__like path{
-//     animation-fill-mode: backwards;
-//     fill: white;
-//     stroke: green;
-//     transform: scale(0);
-//     transition: stroke 1s, fill 1s;
-    
-//  }
-  
-//   &__icon:hover {
-//     & .heart-like {
-//       stroke: none;
-//       fill: red;
-//       transform: scale(1);
-//     }
-//   }
- }
 .body {
     animation: display 0s 3s;
     animation-fill-mode: backwards;
@@ -223,6 +203,8 @@ margin: 10px 20px 27px 34px ;
  .spinner-container{
     animation:onScreen 3s;
     animation-fill-mode: forwards;
+    width: 100vw;
+    height: 100vh;
    
  }
 .spinner{
