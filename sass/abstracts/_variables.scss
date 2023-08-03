@@ -11,3 +11,39 @@ $purple: #9356DC;
 $pink: #ff79da;
 $light-green: #99e2d0;
 $dark-green: #008766;
+
+
+@keyframes spinner{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes onScreen {
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    
+}
+
+@keyframes display{
+    from{
+       transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
