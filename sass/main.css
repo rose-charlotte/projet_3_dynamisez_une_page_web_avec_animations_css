@@ -90,37 +90,57 @@ body {
   background: linear-gradient(#cac6c6, #eaeaea 9%);
 }
 
-.footer-container {
+.footer {
   background-color: #353535;
   color: white;
   padding: 22px 25px;
 }
-
-.list-container {
+@media (min-width: 1024px) {
+  .footer {
+    padding: 50px 0px 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 120px;
+  }
+}
+.footer__list-container {
   display: flex;
   flex-direction: column;
   gap: 7px;
   margin: unset;
   padding: unset;
 }
-
-.list-container p {
+@media (min-width: 1024px) {
+  .footer__list-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: unset;
+    padding: unset;
+  }
+}
+.footer__list-container p {
   margin: unset;
 }
-
-.footer-list {
+.footer__footer-list-with-logo, .footer__footer-list {
   list-style-type: none;
   display: flex;
   gap: 11px;
   align-items: center;
 }
-
-.logo {
+.footer__logo {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   font-weight: 400;
   margin: unset;
   padding-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  .footer__logo {
+    padding-right: 65px;
+    padding-bottom: unset;
+  }
 }
 
 .main {
