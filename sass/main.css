@@ -184,18 +184,11 @@ body {
   margin: unset;
   padding: unset;
 }
-.info.mainTitle {
-  margin: 48px 80px 26px 20px;
-}
-@media (min-width: 1024px) {
-  .info.mainTitle {
-    margin-bottom: 25px;
-  }
-}
 @media (min-width: 1024px) {
   .info__container {
     display: flex;
     gap: 36px;
+    justify-content: space-around;
   }
 }
 .info__list {
@@ -221,6 +214,15 @@ body {
   align-items: center;
   gap: 27px;
   padding-left: 33px;
+}
+
+.mainTitle {
+  margin: 48px 80px 26px 20px;
+}
+@media (min-width: 1024px) {
+  .mainTitle {
+    margin-bottom: 25px;
+  }
 }
 
 .circle {
@@ -259,6 +261,28 @@ body {
   gap: 18px;
   padding-bottom: 66px;
 }
+@media (min-width: 1024px) {
+  .restaurants {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurants.mainTitle {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+  }
+}
 
 .card {
   display: flex;
@@ -269,6 +293,11 @@ body {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+@media (min-width: 1024px) {
+  .card {
+    width: 490px;
+  }
 }
 .card__info-container {
   display: flex;
@@ -302,6 +331,11 @@ body {
   width: 340px;
   height: 171px;
 }
+@media (min-width: 1024px) {
+  .card__image {
+    width: 490px;
+  }
+}
 .card__image-horizontal {
   width: 100%;
   -o-object-fit: contain;
@@ -311,6 +345,13 @@ body {
           clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
   margin-top: -60px;
 }
+@media (min-width: 1024px) {
+  .card__image-horizontal {
+    -webkit-clip-path: inset(108px 0px 55px 0px round 15px 15px 0px 0px);
+            clip-path: inset(108px 0px 55px 0px round 15px 15px 0px 0px);
+    margin-top: -108px;
+  }
+}
 .card__image-vertical {
   width: 100%;
   -o-object-fit: contain;
@@ -319,6 +360,13 @@ body {
   -webkit-clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
           clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
   margin-top: -160px;
+}
+@media (min-width: 1024px) {
+  .card__image-vertical {
+    -webkit-clip-path: inset(249px 0px 200px 0px round 15px 15px 0px 0px);
+            clip-path: inset(249px 0px 200px 0px round 15px 15px 0px 0px);
+    margin-top: -249px;
+  }
 }
 .card__new {
   background-color: #99e2d0;
