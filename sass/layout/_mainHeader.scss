@@ -1,13 +1,16 @@
 .header {
     font-family: $font-text;
-}
 
-.logo img {
-    width: 162px;
-    height: 36px;
-    padding-left: 16px;
-    padding-right: 19px;
-    margin: 14px 89px 13px;
+    &__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo img {
+        width: 162px;
+        height: 36px;
+        margin: 14px 89px 13px;
+    }
 }
 
 .location {

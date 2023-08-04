@@ -6,6 +6,10 @@
     font-size: 24px;
     font-weight: 700;
     margin: unset;
+
+    @media (min-width: 1024px) {
+        font-size: 40px;
+    }
 }
 
 /***** Section book  *****/
@@ -17,6 +21,10 @@
     align-items: center;
     text-align: center;
     padding-bottom: 57px;
+
+    @media (min-width: 1024px) {
+        gap: 18px;
+    }
 }
 
 .book .mainTitle {
@@ -27,6 +35,10 @@
 
 .book p {
     margin: 10px 20px 27px 34px;
+
+    @media (min-width: 1024px) {
+        font-size: 18px;
+    }
 }
 
 .book .mainButton {
