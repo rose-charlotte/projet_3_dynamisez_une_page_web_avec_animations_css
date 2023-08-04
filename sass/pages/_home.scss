@@ -6,6 +6,10 @@
     font-size: 24px;
     font-weight: 700;
     margin: unset;
+
+    @media (min-width: 1024px) {
+        font-size: 40px;
+    }
 }
 
 /***** Section book  *****/
@@ -17,6 +21,10 @@
     align-items: center;
     text-align: center;
     padding-bottom: 57px;
+
+    @media (min-width: 1024px) {
+        gap: 18px;
+    }
 }
 
 .book .mainTitle {
@@ -27,6 +35,10 @@
 
 .book p {
     margin: 10px 20px 27px 34px;
+
+    @media (min-width: 1024px) {
+        font-size: 18px;
+    }
 }
 
 .book .mainButton {
@@ -36,13 +48,55 @@
 
 /***** Section fonctionnement *****/
 
-.info ul {
-    margin: unset;
-    padding: unset;
+.info {
+    @media (min-width: 1024px) {
+        margin: 50px 180px;
+    }
+    & ul {
+        margin: unset;
+        padding: unset;
+    }
+
+    &__container {
+        @media (min-width: 1024px) {
+            display: flex;
+            gap: 36px;
+            justify-content: space-around;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-left: 33px;
+        margin-bottom: 25px;
+        border-radius: 25px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        list-style-type: none;
+        width: 323px;
+        height: 72px;
+        background-color: $background-light-grey;
+
+        @media (min-width: 1024px) {
+            margin-left: 10px;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 27px;
+            padding-left: 33px;
+        }
+    }
 }
 
-.info .mainTitle {
+.mainTitle {
     margin: 48px 80px 26px 20px;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 25px;
+    }
 }
 
 .circle {
@@ -60,27 +114,6 @@
     height: 24px;
     padding-top: 5px;
     margin-left: -15px;
-}
-
-.info__list {
-    display: flex;
-    align-items: center;
-    margin-left: 33px;
-    margin-bottom: 25px;
-    border-radius: 25px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    list-style-type: none;
-    width: 323px;
-    height: 72px;
-    background-color: $background-light-grey;
-
-    &__text {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 27px;
-        padding-left: 33px;
-    }
 }
 
 .fa-mobile-screen-button,
@@ -102,8 +135,28 @@
     background-color: $background-light-grey;
     gap: 18px;
     padding-bottom: 66px;
+
+    @media (min-width: 1024px) {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
 }
 
+.restaurants.mainTitle {
+    @media (min-width: 1024px) {
+        padding-top: 30px;
+    }
+}
+
+.card-container {
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 50px;
+    }
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -113,6 +166,10 @@
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
     position: relative;
+
+    @media (min-width: 1024px) {
+        width: 490px;
+    }
 
     &__info-container {
         display: flex;
@@ -153,6 +210,10 @@
     &__image {
         width: 340px;
         height: 171px;
+
+        @media (min-width: 1024px) {
+            width: 490px;
+        }
     }
 
     &__image-horizontal {
@@ -161,6 +222,11 @@
         position: relative;
         clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
         margin-top: -60px;
+
+        @media (min-width: 1024px) {
+            clip-path: inset(108px 0px 55px 0px round 15px 15px 0px 0px);
+            margin-top: -108px;
+        }
     }
 
     &__image-vertical {
@@ -169,6 +235,11 @@
         position: relative;
         clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
         margin-top: -160px;
+
+        @media (min-width: 1024px) {
+            clip-path: inset(249px 0px 200px 0px round 15px 15px 0px 0px);
+            margin-top: -249px;
+        }
     }
 
     &__new {
