@@ -72,6 +72,11 @@ body {
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.35);
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .header {
   font-family: "Roboto", sans-serif;
 }
@@ -298,6 +303,11 @@ body {
   }
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
 @media (min-width: 1024px) {
   .card-container {
     display: flex;
@@ -400,34 +410,16 @@ body {
   font-weight: 500;
   z-index: 1;
   position: absolute;
-  top: 12px;
-  left: 250px;
+  top: 0.75rem;
+  left: 15.6rem;
+}
+@media (min-width: 1024px) {
+  .card__new {
+    top: 0.75rem;
+    left: 24.6rem;
+  }
 }
 
 .heart-like {
   animation: fillOut 1s;
-}
-
-.body {
-  animation: display 0s 3s;
-  animation-fill-mode: backwards;
-}
-
-.spinner-container {
-  animation: onScreen 3s;
-  animation-fill-mode: forwards;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.spinner-container__spinner {
-  width: 100px;
-  height: 100px;
-  border: 3px solid;
-  border-top: black;
-  border-radius: 50%;
-  animation: spinner 2s linear infinite;
 }/*# sourceMappingURL=main.css.map */
