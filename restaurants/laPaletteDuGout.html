@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../sass/main.css" />
+        <title>La palette du gout</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_restaurants">
+                <a class="arrow" href="../index.html"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+                <img src="../images-text/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
+            </div>
+
+            <img
+                class="resto_photo"
+                src="../images-text/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="photo la palette du goût"
+            />
+        </header>
+        <main class="resto_menu">
+            <div class="resto_menu-header">
+                <h1 class="resto_name">La Palette du goût</h1>
+                <button class="card__icon">
+                    <svg
+                        width="22px"
+                        height="21px"
+                        class="card__like"
+                        viewBox="0 -1 32 32"
+                        version="1.1"
+                        fill="transparant"
+                        stroke="black"
+                    >
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color: #9356dc" />
+                                <stop offset="100%" style="stop-color: #ff79da">
+                                    <animate class="animation" dur="2s" attributeName="offset" by="-1" />
+                                </stop>
+                            </linearGradient>
+                        </defs>
+                        <g class="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g class="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g class="SVGRepo_iconCarrier">
+                            <title>heart-like</title>
+                            <desc>Created with Sketch Beta.</desc>
+                            <defs></defs>
+                            <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g class="Icon-Set-Filled" transform="translate(-102.000000, -882.000000)" fill="none">
+                                    <path
+                                        fill="transparent"
+                                        stroke="black"
+                                        d="M126,882 C122.667,882 119.982,883.842 117.969,886.235 C116.013,883.76 113.333,882 110,882 C105.306,882 102,886.036 102,890.438 C102,892.799 102.967,894.499 104.026,896.097 L116.459,911.003 C117.854,912.312 118.118,912.312 119.513,911.003 L131.974,896.097 C133.22,894.499 134,892.799 134,890.438 C134,886.036 130.694,882 126,882"
+                                        class="heart-like"
+                                    ></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+            <section class="resto_menu-entries">
+                <h2 class="resto_menu-title">Entrées</h2>
+
+                <ul class="resto_menu-list">
+                    <li class="resto_menu-list-item">
+                        <h3>Fricassée d'escargots</h3>
+                        <div class="resto_menu-list-item-complement">
+                            <p>Au piment d'Espelette</p>
+                            <h4>25€</h4>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <h3>Foie gras de canard mi-cuit</h3>
+                        <div class="resto_menu-list-item-complement">
+                            <p>Et ses copeaux de truffe noire</p>
+                            <h4>35€</h4>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <h3>Œuf au plat</h3>
+                        <div class="resto_menu-list-item-complement">
+                            <p>Assaisonné à la truffe sur lit de caviar</p>
+                            <h4>20€</h4>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="resto_menu-dishes">
+                <h2 class="resto_menu-title">plats</h2>
+
+                <ul class="resto_menu-list">
+                    <li class="resto_menu-list-item">
+                        <h3>Filet de bœuf aux herbes</h3>
+                        <div class="resto_menu-list-item-complement">
+                            <p>Accompagné de sa ribambelle de légumes</p>
+                            <h4>40€</h4>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <h3>Parmentier de queue de bœuf</h3>
+                        <div class="resto_menu-list-item-complement">
+                            <p>À la truffe noire sur sa purée de panais</p>
+                            <h4>35€</h4>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <h3>Filet de turbot</h3>
+                        <div class="resto_menu-list-item-complement">
+                            <p>Aux agrumes</p>
+                            <h4>44€</h4>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="resto_menu-desserts">
+                <h2 class="resto_menu-title">Desserts</h2>
+
+                <ul class="resto_menu-list">
+                    <li class="resto_menu-list-item">
+                        <h3>Paris-Brest</h3>
+                        <div class="resto_menu-list-item-complement">
+                            <p>Revisité</p>
+                            <h4>18€</h4>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <h3>Macaron au chocolat d'exception</h3>
+                        <div class="resto_menu-list-item-complement">
+                            <p>Et glace à la vanille de Madagascar</p>
+                            <h4>22€</h4>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <h3>Mousse au chocolat</h3>
+                        <div class="resto_menu-list-item-complement">
+                            <p>Au piment d'Espelette et à la truffe noire</p>
+                            <h4>23€</h4>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <button class="mainButton restaurant-button">Commander</button>
+        </main>
+        <footer class="footer">
+            <p class="footer__logo">ohmyfood</p>
+            <ul class="footer__list-container">
+                <li class="footer__footer-list-with-logo">
+                    <i class="fa-solid fa-utensils fa-sm"></i>
+                    <p>Proposer un restaurant</p>
+                </li>
+                <li class="footer__footer-list-with-logo">
+                    <i class="fa-sharp fa-solid fa-handshake-angle fa-xs"></i>
+                    <p>Devenir partenaire</p>
+                </li>
+                <li class="footer__footer-list">Mentions légales</li>
+                <li class="footer__footer-list">Contact</li>
+            </ul>
+        </footer>
+    </body>
+</html>

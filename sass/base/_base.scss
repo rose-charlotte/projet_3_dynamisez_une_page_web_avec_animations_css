@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     margin: unset;
     padding: unset;
+    font-family: $font-text;
 }
 
 .mainButton {
@@ -19,4 +20,9 @@ body {
         filter: brightness(125%);
         box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.35);
     }
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }

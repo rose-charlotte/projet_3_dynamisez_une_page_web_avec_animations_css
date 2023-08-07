@@ -11,6 +11,16 @@
         height: 36px;
         margin: 14px 89px 13px;
     }
+
+    &_restaurants {
+        display: flex;
+        justify-content: flex-start;
+        gap: 42px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 17px;
+        align-items: center;
+    }
 }
 
 .location {
@@ -20,4 +30,10 @@
     justify-content: center;
     gap: 17px;
     background: linear-gradient(#cac6c6, $background-dark-grey 9%);
+}
+
+.arrow {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
