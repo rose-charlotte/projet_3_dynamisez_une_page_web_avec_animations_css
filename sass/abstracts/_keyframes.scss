@@ -41,12 +41,15 @@
 }
 
 @keyframes fillOut {
-    from {
+    0% {
+        fill: url(#gradient);
         opacity: 1;
         stroke: none;
     }
-
-    to {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
         opacity: 0;
         stroke: none;
     }

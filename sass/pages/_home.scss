@@ -201,7 +201,7 @@
         &:hover {
             & .heart-like {
                 fill: url(#gradient);
-                animation: fill 2s ease-in-out;
+                animation: fill 1s;
                 animation-fill-mode: both;
             }
         }
@@ -253,6 +253,10 @@
         top: 12px;
         left: 250px;
     }
+}
+
+.heart-like {
+    animation: fillOut 1s;
 }
 
 .body {
