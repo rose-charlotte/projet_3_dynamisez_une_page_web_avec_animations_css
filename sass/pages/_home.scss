@@ -259,10 +259,10 @@
     animation: fillOut 1s;
 }
 
-.body {
-    animation: display 0s $spinner-time;
-    animation-fill-mode: backwards;
-}
+// .body {
+//     animation: display 0s $spinner-time;
+//     animation-fill-mode: backwards;
+// }
 
 .spinner-container {
     animation: onScreen $spinner-time;
