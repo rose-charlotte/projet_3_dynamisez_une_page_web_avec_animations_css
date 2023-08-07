@@ -37,11 +37,15 @@
   }
 }
 @keyframes fillOut {
-  from {
+  0% {
+    fill: url(#gradient);
     opacity: 1;
     stroke: none;
   }
-  to {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 0;
     stroke: none;
   }
@@ -344,7 +348,7 @@ body {
 }
 .card__icon:hover .heart-like {
   fill: url(#gradient);
-  animation: fill 2s ease-in-out;
+  animation: fill 1s;
   animation-fill-mode: both;
 }
 .card__image {
@@ -398,6 +402,10 @@ body {
   position: absolute;
   top: 12px;
   left: 250px;
+}
+
+.heart-like {
+  animation: fillOut 1s;
 }
 
 .body {
