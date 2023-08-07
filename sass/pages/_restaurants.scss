@@ -1,0 +1,28 @@
+.resto {
+    &_photo {
+        width: 375px;
+        object-fit: contain;
+        position: relative;
+    }
+
+    &_name {
+        font-family: $font-title;
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    &_menu {
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        position: relative;
+        background-color: $background-light-grey;
+        margin-top: -55px;
+        z-index: 1;
+    }
+
+    &_menu-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
