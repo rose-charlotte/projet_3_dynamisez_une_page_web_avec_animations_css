@@ -408,6 +408,11 @@ body {
   animation: fillOut 1s;
 }
 
+.body {
+  animation: display 0s 3s;
+  animation-fill-mode: backwards;
+}
+
 .spinner-container {
   animation: onScreen 3s;
   animation-fill-mode: forwards;
