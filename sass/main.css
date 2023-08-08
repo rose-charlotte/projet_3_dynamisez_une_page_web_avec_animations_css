@@ -509,6 +509,18 @@ a {
   padding: unset;
   margin: unset;
 }
+.resto_menu-list-item:hover .selected {
+  display: block;
+}
+.resto_menu-list-item:hover .resto_menu-list-item-text {
+  width: 260px;
+}
+.resto_menu-list-item:hover .resto_menu-list-item-complement p {
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .restaurant-button {
   width: 186px;
@@ -517,6 +529,7 @@ a {
 }
 
 .selected {
+  display: none;
   position: absolute;
   top: 0px;
   left: 288px;
