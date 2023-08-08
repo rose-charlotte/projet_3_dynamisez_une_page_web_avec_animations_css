@@ -1,6 +1,6 @@
 .resto {
     &_photo {
-        width: 375px;
+        width: 100vw;
         object-fit: contain;
         position: relative;
     }
@@ -57,22 +57,58 @@
     }
 
     &_menu-list-item {
+        position: relative;
         list-style-type: none;
         background-color: $white;
         border-radius: 15px;
-        width: 319px;
-        padding: 15px;
+        width: 349px;
+
+        &-text {
+            padding: 15px;
+        }
 
         &-complement {
             display: flex;
             justify-content: space-between;
-            padding-top: 3px;
+            font-size: 15px;
         }
+
         & h3,
         p,
         h4 {
             padding: unset;
             margin: unset;
+        }
+
+        &:hover {
+            & .selected {
+                position: absolute;
+                top: 0px;
+                left: 288px;
+                width: 62px;
+                display: block;
+                transform: scaleX(1);
+                transform-origin: right;
+                animation: checked 0.5s;
+                animation-fill-mode: both;
+            }
+            & .resto_menu-list-item-text {
+                width: 260px;
+            }
+            & .resto_menu-list-item-text h3,
+            & .resto_menu-list-item-complement p {
+                width: 220px;
+                white-space: nowrap;
+                overflow: hidden;
+                animation: checkedText 0.5s;
+                animation-fill-mode: forwards;
+            }
+
+            & .resto_menu-list-item-complement h4 {
+                transform: translateX(1);
+                transform-origin: right;
+                animation: checkedPrice 0.5s;
+            }
         }
     }
 }
@@ -81,4 +117,19 @@
     width: 186px;
     align-self: center;
     margin-bottom: 40px;
+}
+
+.selected {
+    position: absolute;
+    top: 0px;
+    left: 288px;
+    width: 62px;
+    transform: scaleX(0);
+    transform-origin: right;
+    animation: unChecked 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.resto_menu-list-item-complement h4 {
+    animation: inverseCheckedPrice 0.5s;
 }

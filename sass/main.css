@@ -50,6 +50,46 @@
     stroke: none;
   }
 }
+@keyframes checked {
+  from {
+    display: none;
+    transform: scaleX(0);
+  }
+  to {
+    display: block;
+    transform: scaleX(1);
+  }
+}
+@keyframes unChecked {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+    display: none;
+  }
+}
+@keyframes checkedPrice {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes inverseCheckedPrice {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes checkedText {
+  to {
+    text-overflow: ellipsis;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -437,7 +477,7 @@ a {
 }
 
 .resto_photo {
-  width: 375px;
+  width: 100vw;
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
@@ -489,16 +529,19 @@ a {
   padding: unset;
 }
 .resto_menu-list-item {
+  position: relative;
   list-style-type: none;
   background-color: white;
   border-radius: 15px;
-  width: 319px;
+  width: 349px;
+}
+.resto_menu-list-item-text {
   padding: 15px;
 }
 .resto_menu-list-item-complement {
   display: flex;
   justify-content: space-between;
-  padding-top: 3px;
+  font-size: 15px;
 }
 .resto_menu-list-item h3,
 .resto_menu-list-item p,
@@ -506,9 +549,50 @@ a {
   padding: unset;
   margin: unset;
 }
+.resto_menu-list-item:hover .selected {
+  position: absolute;
+  top: 0px;
+  left: 288px;
+  width: 62px;
+  display: block;
+  transform: scaleX(1);
+  transform-origin: right;
+  animation: checked 0.5s;
+  animation-fill-mode: both;
+}
+.resto_menu-list-item:hover .resto_menu-list-item-text {
+  width: 260px;
+}
+.resto_menu-list-item:hover .resto_menu-list-item-text h3, .resto_menu-list-item:hover .resto_menu-list-item-complement p {
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: checkedText 0.5s;
+  animation-fill-mode: forwards;
+}
+.resto_menu-list-item:hover .resto_menu-list-item-complement h4 {
+  transform: translateX(1);
+  transform-origin: right;
+  animation: checkedPrice 0.5s;
+}
 
 .restaurant-button {
   width: 186px;
   align-self: center;
   margin-bottom: 40px;
+}
+
+.selected {
+  position: absolute;
+  top: 0px;
+  left: 288px;
+  width: 62px;
+  transform: scaleX(0);
+  transform-origin: right;
+  animation: unChecked 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.resto_menu-list-item-complement h4 {
+  animation: inverseCheckedPrice 0.5s;
 }/*# sourceMappingURL=main.css.map */

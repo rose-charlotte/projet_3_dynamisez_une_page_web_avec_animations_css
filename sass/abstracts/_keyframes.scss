@@ -54,3 +54,48 @@
         stroke: none;
     }
 }
+
+@keyframes checked {
+    from {
+        display: none;
+        transform: scaleX(0);
+    }
+    to {
+        display: block;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes unChecked {
+    from {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(0);
+        display: none;
+    }
+}
+
+@keyframes checkedPrice {
+    from {
+        transform: translateX(50px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes inverseCheckedPrice {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes checkedText {
+    to {
+        text-overflow: ellipsis;
+    }
+}
