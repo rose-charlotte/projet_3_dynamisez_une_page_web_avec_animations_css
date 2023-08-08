@@ -1,6 +1,6 @@
 .resto {
     &_photo {
-        width: 375px;
+        width: 100vw;
         object-fit: contain;
         position: relative;
     }
@@ -82,16 +82,32 @@
 
         &:hover {
             & .selected {
+                position: absolute;
+                top: 0px;
+                left: 288px;
+                width: 62px;
                 display: block;
+                transform: scaleX(1);
+                transform-origin: right;
+                animation: checked 0.5s;
+                animation-fill-mode: both;
             }
             & .resto_menu-list-item-text {
                 width: 260px;
             }
+            & .resto_menu-list-item-text h3,
             & .resto_menu-list-item-complement p {
                 width: 220px;
                 white-space: nowrap;
                 overflow: hidden;
-                text-overflow: ellipsis;
+                animation: checkedText 0.5s;
+                animation-fill-mode: forwards;
+            }
+
+            & .resto_menu-list-item-complement h4 {
+                transform: translateX(1);
+                transform-origin: right;
+                animation: checkedPrice 0.5s;
             }
         }
     }
@@ -104,9 +120,16 @@
 }
 
 .selected {
-    display: none;
     position: absolute;
     top: 0px;
     left: 288px;
     width: 62px;
+    transform: scaleX(0);
+    transform-origin: right;
+    animation: unChecked 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.resto_menu-list-item-complement h4 {
+    animation: inverseCheckedPrice 0.5s;
 }
