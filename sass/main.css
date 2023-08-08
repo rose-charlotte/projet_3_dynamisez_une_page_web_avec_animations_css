@@ -79,10 +79,10 @@
 }
 @keyframes inverseCheckedPrice {
   from {
-    transform: translateX(0px);
+    transform: translateX(-50px);
   }
   to {
-    transform: translateX(50px);
+    transform: translateX(0px);
   }
 }
 @keyframes checkedText {
