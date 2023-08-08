@@ -489,16 +489,19 @@ a {
   padding: unset;
 }
 .resto_menu-list-item {
+  position: relative;
   list-style-type: none;
   background-color: white;
   border-radius: 15px;
-  width: 319px;
+  width: 349px;
+}
+.resto_menu-list-item-text {
   padding: 15px;
 }
 .resto_menu-list-item-complement {
   display: flex;
   justify-content: space-between;
-  padding-top: 3px;
+  font-size: 15px;
 }
 .resto_menu-list-item h3,
 .resto_menu-list-item p,
@@ -511,4 +514,11 @@ a {
   width: 186px;
   align-self: center;
   margin-bottom: 40px;
+}
+
+.selected {
+  position: absolute;
+  top: 0px;
+  left: 288px;
+  width: 62px;
 }/*# sourceMappingURL=main.css.map */

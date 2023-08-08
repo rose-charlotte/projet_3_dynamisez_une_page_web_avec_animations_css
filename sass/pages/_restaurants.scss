@@ -57,16 +57,20 @@
     }
 
     &_menu-list-item {
+        position: relative;
         list-style-type: none;
         background-color: $white;
         border-radius: 15px;
-        width: 319px;
-        padding: 15px;
+        width: 349px;
+
+        &-text {
+            padding: 15px;
+        }
 
         &-complement {
             display: flex;
             justify-content: space-between;
-            padding-top: 3px;
+            font-size: 15px;
         }
         & h3,
         p,
@@ -81,4 +85,11 @@
     width: 186px;
     align-self: center;
     margin-bottom: 40px;
+}
+
+.selected {
+    position: absolute;
+    top: 0px;
+    left: 288px;
+    width: 62px;
 }
