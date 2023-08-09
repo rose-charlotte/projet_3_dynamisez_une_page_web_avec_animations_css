@@ -3,6 +3,14 @@
         width: 100vw;
         object-fit: contain;
         position: relative;
+
+        &-vertical {
+            width: 100vw;
+            -webkit-clip-path: inset(80px 0px 0px 0px);
+            clip-path: inset(111px 0px 125px 0px);
+            margin-top: -111px;
+            margin-bottom: -125px;
+        }
     }
 
     &_name {
