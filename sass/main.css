@@ -40,7 +40,6 @@
   0% {
     fill: url(#gradient);
     opacity: 1;
-    stroke: none;
   }
   50% {
     opacity: 0.5;
@@ -413,9 +412,6 @@ body {
   margin: unset;
 }
 .card__icon {
-  position: absolute;
-  top: 175px;
-  left: 251px;
   margin: 23px 25px 33px;
   background-color: white;
   border: none;
@@ -494,6 +490,16 @@ body {
 .card a {
   color: black;
   text-decoration: none;
+}
+
+.heart-like {
+  animation: fillOut 0.5s;
+}
+
+.icon-main {
+  position: absolute;
+  top: 175px;
+  left: 251px;
 }
 
 .resto_photo {

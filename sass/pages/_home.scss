@@ -192,9 +192,6 @@
     }
 
     &__icon {
-        position: absolute;
-        top: 175px;
-        left: 251px;
         margin: 23px 25px 33px;
         background-color: white;
         border: none;
@@ -272,9 +269,15 @@
     text-decoration: none;
 }
 
-// .heart-like {
-//     animation: fillOut 1s;
-// }
+.heart-like {
+    animation: fillOut 0.5s;
+}
+
+.icon-main {
+    position: absolute;
+    top: 175px;
+    left: 251px;
+}
 
 // .body {
 //     animation: display 0s $spinner-time;
