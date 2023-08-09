@@ -14,12 +14,9 @@
 
     &_restaurants {
         display: flex;
-        justify-content: flex-start;
-        gap: 65px;
+        justify-content: center;
         padding-top: 14px;
         padding-bottom: 14px;
-        padding-left: 17px;
-        align-items: center;
 
         & a {
             text-decoration: none;
@@ -41,4 +38,7 @@
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+    position: absolute;
+    top: 30px;
+    left: 22px;
 }

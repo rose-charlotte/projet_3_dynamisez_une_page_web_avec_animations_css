@@ -89,11 +89,11 @@
 }
 @keyframes arrived1 {
   from {
-    translate: 0% 100%;
+    transform: translateX(100%);
     opacity: 0;
   }
   to {
-    translate: 0% -5%;
+    transform: translateX(0%);
     opacity: 1;
   }
 }
@@ -103,6 +103,12 @@ body {
   margin: unset;
   padding: unset;
   font-family: "Roboto", sans-serif;
+}
+@media (min-width: 1024px) {
+  body {
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .mainButton {
@@ -134,12 +140,9 @@ body {
 }
 .header_restaurants {
   display: flex;
-  justify-content: flex-start;
-  gap: 65px;
+  justify-content: center;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 17px;
-  align-items: center;
 }
 .header_restaurants a {
   text-decoration: none;
@@ -159,6 +162,9 @@ body {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
+  position: absolute;
+  top: 30px;
+  left: 22px;
 }
 
 .footer {
@@ -437,14 +443,14 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
-  -webkit-clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
-          clip-path: inset(60px 0px 0px 0px round 15px 15px 0px 0px);
+  -webkit-clip-path: inset(60px 0px 0px round 15px 15px 0px 0px);
+          clip-path: inset(60px 0px 0px round 15px 15px 0px 0px);
   margin-top: -60px;
 }
 @media (min-width: 1024px) {
   .card__image-horizontal {
-    -webkit-clip-path: inset(108px 0px 55px 0px round 15px 15px 0px 0px);
-            clip-path: inset(108px 0px 55px 0px round 15px 15px 0px 0px);
+    -webkit-clip-path: inset(108px 0px 55px round 15px 15px 0px 0px);
+            clip-path: inset(108px 0px 55px round 15px 15px 0px 0px);
     margin-top: -108px;
   }
 }
@@ -453,14 +459,14 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
-  -webkit-clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
-          clip-path: inset(160px 0px 96px 0px round 15px 15px 0px 0px);
+  -webkit-clip-path: inset(160px 0px 96px round 15px 15px 0px 0px);
+          clip-path: inset(160px 0px 96px round 15px 15px 0px 0px);
   margin-top: -160px;
 }
 @media (min-width: 1024px) {
   .card__image-vertical {
-    -webkit-clip-path: inset(249px 0px 200px 0px round 15px 15px 0px 0px);
-            clip-path: inset(249px 0px 200px 0px round 15px 15px 0px 0px);
+    -webkit-clip-path: inset(249px 0px 200px round 15px 15px 0px 0px);
+            clip-path: inset(249px 0px 200px round 15px 15px 0px 0px);
     margin-top: -249px;
   }
 }
@@ -504,10 +510,18 @@ body {
      object-fit: contain;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .resto_photo {
+    -webkit-clip-path: inset(260px 0px 175px);
+            clip-path: inset(260px 0px 175px);
+    margin-top: -260px;
+    margin-bottom: -175px;
+  }
+}
 .resto_photo-vertical {
   width: 100vw;
-  -webkit-clip-path: inset(80px 0px 0px 0px);
-  clip-path: inset(111px 0px 125px 0px);
+  -webkit-clip-path: inset(111px 0px 125px 0px);
+          clip-path: inset(111px 0px 125px 0px);
   margin-top: -111px;
   margin-bottom: -125px;
 }
@@ -527,6 +541,11 @@ body {
   background-color: #f6f6f6;
   margin-top: -55px;
   z-index: 1;
+}
+@media (min-width: 1024px) {
+  .resto_menu {
+    width: 75vw;
+  }
 }
 .resto_menu-header {
   display: flex;
@@ -631,10 +650,10 @@ body {
 
 .resto_menu-dishes {
   animation: arrived1 1s 1s;
-  animation-fill-mode: both;
+  animation-fill-mode: backwards;
 }
 
 .resto_menu-desserts {
   animation: arrived1 1s 2s;
-  animation-fill-mode: both;
+  animation-fill-mode: backwards;
 }/*# sourceMappingURL=main.css.map */

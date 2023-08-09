@@ -4,6 +4,11 @@ body {
     margin: unset;
     padding: unset;
     font-family: $font-text;
+
+    @media (min-width: 1024px) {
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
 
 .mainButton {
