@@ -192,11 +192,18 @@
     }
 
     &__icon {
+        position: absolute;
+        top: 175px;
+        left: 251px;
         margin: 23px 25px 33px;
         background-color: white;
         border: none;
         width: 30px;
         height: 30px;
+
+        @media (min-width: 1024px) {
+            left: 413px;
+        }
 
         &:hover {
             & .heart-like {

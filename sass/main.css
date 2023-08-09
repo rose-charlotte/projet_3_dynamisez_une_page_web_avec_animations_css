@@ -88,6 +88,16 @@
     text-overflow: ellipsis;
   }
 }
+@keyframes arrived1 {
+  from {
+    translate: 0% 100%;
+    opacity: 0;
+  }
+  to {
+    translate: 0% -5%;
+    opacity: 1;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -131,6 +141,10 @@ body {
   padding-bottom: 14px;
   padding-left: 17px;
   align-items: center;
+}
+.header_restaurants a {
+  text-decoration: none;
+  color: black;
 }
 
 .location {
@@ -183,6 +197,10 @@ body {
 }
 .footer__footer-list-with-logo, .footer__footer-list {
   list-style-type: none;
+}
+.footer__footer-list-with-logo a, .footer__footer-list a {
+  color: white;
+  text-decoration: none;
   display: flex;
   gap: 11px;
   align-items: center;
@@ -199,11 +217,6 @@ body {
     padding-right: 65px;
     padding-bottom: unset;
   }
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
 }
 
 .mainTitle {
@@ -400,11 +413,19 @@ body {
   margin: unset;
 }
 .card__icon {
+  position: absolute;
+  top: 175px;
+  left: 251px;
   margin: 23px 25px 33px;
   background-color: white;
   border: none;
   width: 30px;
   height: 30px;
+}
+@media (min-width: 1024px) {
+  .card__icon {
+    left: 413px;
+  }
 }
 .card__icon:hover .heart-like {
   fill: url(#gradient);
@@ -593,4 +614,18 @@ body {
 
 .heart-restaurants {
   background-color: #f6f6f6;
+}
+
+.resto_menu-entries {
+  animation: arrived1 1s;
+}
+
+.resto_menu-dishes {
+  animation: arrived1 1s 1s;
+  animation-fill-mode: both;
+}
+
+.resto_menu-desserts {
+  animation: arrived1 1s 2s;
+  animation-fill-mode: both;
 }/*# sourceMappingURL=main.css.map */

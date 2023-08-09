@@ -131,3 +131,17 @@
 .heart-restaurants {
     background-color: $background-light-grey;
 }
+
+.resto_menu-entries {
+    animation: arrived1 1s;
+}
+
+.resto_menu-dishes {
+    animation: arrived1 1s 1s;
+    animation-fill-mode: both;
+}
+
+.resto_menu-desserts {
+    animation: arrived1 1s 2s;
+    animation-fill-mode: both;
+}
