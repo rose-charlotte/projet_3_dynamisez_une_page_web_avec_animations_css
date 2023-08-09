@@ -45,9 +45,15 @@
 /***** Section fonctionnement *****/
 
 .info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
     @media (min-width: 1024px) {
         margin: 50px 180px;
     }
+
     & ul {
         margin: unset;
         padding: unset;
