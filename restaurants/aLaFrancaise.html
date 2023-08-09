@@ -3,9 +3,344 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../sass/main.css" />
         <title>A la française</title>
     </head>
     <body>
-        A la française
+        <header class="header">
+            <div class="header_restaurants">
+                <a class="arrow" href="../index.html"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+                <img src="../images-text/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
+            </div>
+
+            <img
+                class="resto_photo"
+                src="../images-text/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="photo A la française"
+            />
+        </header>
+        <main class="resto_menu">
+            <div class="resto_menu-header">
+                <h1 class="resto_name">La Palette du goût</h1>
+                <button class="card__icon heart-restaurants">
+                    <svg
+                        width="22px"
+                        height="21px"
+                        class="card__like"
+                        viewBox="0 -1 32 32"
+                        version="1.1"
+                        fill="transparant"
+                        stroke="black"
+                    >
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color: #9356dc" />
+                                <stop offset="100%" style="stop-color: #ff79da" />
+                            </linearGradient>
+                        </defs>
+                        <g class="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g class="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g class="SVGRepo_iconCarrier">
+                            <title>heart-like</title>
+                            <desc>Created with Sketch Beta.</desc>
+                            <defs></defs>
+                            <g class="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g class="Icon-Set-Filled" transform="translate(-102.000000, -882.000000)" fill="none">
+                                    <path
+                                        fill="transparent"
+                                        stroke="black"
+                                        d="M126,882 C122.667,882 119.982,883.842 117.969,886.235 C116.013,883.76 113.333,882 110,882 C105.306,882 102,886.036 102,890.438 C102,892.799 102.967,894.499 104.026,896.097 L116.459,911.003 C117.854,912.312 118.118,912.312 119.513,911.003 L131.974,896.097 C133.22,894.499 134,892.799 134,890.438 C134,886.036 130.694,882 126,882"
+                                        class="heart-like"
+                                    ></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+            <section class="resto_menu-entries">
+                <h2 class="resto_menu-title">Entrées</h2>
+
+                <ul class="resto_menu-list">
+                    <li class="resto_menu-list-item">
+                        <div class="resto_menu-list-item-text">
+                            <h3>Tartare de poulpe acidulé</h3>
+                            <div class="resto_menu-list-item-complement">
+                                <p>Aux zestes d'orange</p>
+                                <h4>25€</h4>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <svg viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="Select-button">
+                                    <path
+                                        class="Rectangle-8"
+                                        d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                                        fill="#99E2D0"
+                                    />
+                                    <path
+                                        class="IconCheck"
+                                        d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                                        fill="white"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <div class="resto_menu-list-item-text">
+                            <h3>Velouté de légumes d'antan</h3>
+                            <div class="resto_menu-list-item-complement">
+                                <p>Carotte, panais, topinambour</p>
+                                <h4>35€</h4>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <svg viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="Select-button">
+                                    <path
+                                        class="Rectangle-8"
+                                        d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                                        fill="#99E2D0"
+                                    />
+                                    <path
+                                        class="IconCheck"
+                                        d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                                        fill="white"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <div class="resto_menu-list-item-text">
+                            <h3>Soupe à l'oignon</h3>
+                            <div class="resto_menu-list-item-complement">
+                                <p>Revisitée</p>
+                                <h4>20€</h4>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <svg viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="Select-button">
+                                    <path
+                                        class="Rectangle8"
+                                        d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                                        fill="#99E2D0"
+                                    />
+                                    <path
+                                        class="IconCheck"
+                                        d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                                        fill="white"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="resto_menu-dishes">
+                <h2 class="resto_menu-title">plats</h2>
+
+                <ul class="resto_menu-list">
+                    <li class="resto_menu-list-item">
+                        <div class="resto_menu-list-item-text">
+                            <h3>Coquilles Saint-Jacques</h3>
+                            <div class="resto_menu-list-item-complement">
+                                <p>Accompagnées d'une purée de panais</p>
+                                <h4>40€</h4>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <svg viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="Select-button">
+                                    <path
+                                        class="Rectangle-8"
+                                        d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                                        fill="#99E2D0"
+                                    />
+                                    <path
+                                        class="IconCheck"
+                                        d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                                        fill="white"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <div class="resto_menu-list-item-text">
+                            <h3>Magret de canard</h3>
+                            <div class="resto_menu-list-item-complement">
+                                <p>Et parmentier de pommes de terre</p>
+                                <h4>35€</h4>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <svg viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="Select-button">
+                                    <path
+                                        class="Rectangle-8"
+                                        d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                                        fill="#99E2D0"
+                                    />
+                                    <path
+                                        class="IconCheck"
+                                        d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                                        fill="white"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <div class="resto_menu-list-item-text">
+                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                            <div class="resto_menu-list-item-complement">
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                                <h4>44€</h4>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <svg viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="Select-button">
+                                    <path
+                                        class="Rectangle-8"
+                                        d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                                        fill="#99E2D0"
+                                    />
+                                    <path
+                                        class="IconCheck"
+                                        d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                                        fill="white"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="resto_menu-desserts">
+                <h2 class="resto_menu-title">Desserts</h2>
+
+                <ul class="resto_menu-list">
+                    <li class="resto_menu-list-item">
+                        <div class="resto_menu-list-item-text">
+                            <h3>Pétales de violettes glacés</h3>
+                            <div class="resto_menu-list-item-complement">
+                                <p>Et purée de noisettes</p>
+                                <h4>18€</h4>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <svg viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="Select-button">
+                                    <path
+                                        class="Rectangle-8"
+                                        d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                                        fill="#99E2D0"
+                                    />
+                                    <path
+                                        class="IconCheck"
+                                        d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                                        fill="white"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <div class="resto_menu-list-item-text">
+                            <h3>Fondant au chocolat</h3>
+                            <div class="resto_menu-list-item-complement">
+                                <p>Revisité</p>
+                                <h4>22€</h4>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <svg viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="Select-button">
+                                    <path
+                                        class="Rectangle-8"
+                                        d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                                        fill="#99E2D0"
+                                    />
+                                    <path
+                                        class="IconCheck"
+                                        d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                                        fill="white"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="resto_menu-list-item">
+                        <div class="resto_menu-list-item-text">
+                            <h3>Millefeuille croustillant</h3>
+                            <div class="resto_menu-list-item-complement">
+                                <p>Myrtilles et pâte d’amande</p>
+                                <h4>23€</h4>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <svg viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="Select-button">
+                                    <path
+                                        class="Rectangle-8"
+                                        d="M0.5 0H44.5C52.7843 0 59.5 6.71573 59.5 15V54C59.5 62.2843 52.7843 69 44.5 69H0.5V0Z"
+                                        fill="#99E2D0"
+                                    />
+                                    <path
+                                        class="IconCheck"
+                                        d="M40.0847 34.9656C40.0847 40.4884 35.6076 44.9656 30.0847 44.9656C24.5619 44.9656 20.0847 40.4884 20.0847 34.9656C20.0847 29.4427 24.5619 24.9656 30.0847 24.9656C35.6076 24.9656 40.0847 29.4427 40.0847 34.9656ZM28.928 40.2605L36.3474 32.8411C36.5993 32.5892 36.5993 32.1807 36.3474 31.9288L35.435 31.0164C35.1831 30.7644 34.7746 30.7644 34.5226 31.0164L28.4718 37.0671L25.6469 34.2421C25.3949 33.9902 24.9864 33.9902 24.7344 34.2421L23.8221 35.1545C23.5701 35.4065 23.5701 35.815 23.8221 36.0669L28.0156 40.2605C28.2676 40.5124 28.676 40.5124 28.928 40.2605Z"
+                                        fill="white"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <button class="mainButton restaurant-button">Commander</button>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__logo">ohmyfood</p>
+            <ul class="footer__list-container">
+                <li class="footer__footer-list-with-logo">
+                    <a href="#">
+                        <i class="fa-solid fa-utensils fa-sm"></i>
+                        <p>Proposer un restaurant</p>
+                    </a>
+                </li>
+
+                <li class="footer__footer-list-with-logo">
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-handshake-angle fa-xs"></i>
+                        <p>Devenir partenaire</p>
+                    </a>
+                </li>
+
+                <li class="footer__footer-list"><a href="#"> Mentions légales</a></li>
+                <li class="footer__footer-list"><a href="mailto:ohmyfood@homyfood.com">Contact</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
