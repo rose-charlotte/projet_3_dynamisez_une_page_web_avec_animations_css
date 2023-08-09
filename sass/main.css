@@ -111,11 +111,6 @@ body {
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.35);
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
 .header {
   font-family: "Roboto", sans-serif;
 }
@@ -204,6 +199,11 @@ a {
     padding-right: 65px;
     padding-bottom: unset;
   }
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
 }
 
 .mainTitle {
@@ -468,6 +468,11 @@ a {
     top: 0.75rem;
     left: 24.6rem;
   }
+}
+
+.card a {
+  color: black;
+  text-decoration: none;
 }
 
 .resto_photo {
