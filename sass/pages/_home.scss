@@ -260,31 +260,31 @@
     }
 }
 
-.heart-like {
-    animation: fillOut 1s;
-}
+// .heart-like {
+//     animation: fillOut 1s;
+// }
 
-.body {
-    animation: display 0s $spinner-time;
-    animation-fill-mode: backwards;
-}
+// .body {
+//     animation: display 0s $spinner-time;
+//     animation-fill-mode: backwards;
+// }
 
-.spinner-container {
-    animation: onScreen $spinner-time;
-    animation-fill-mode: forwards;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .spinner-container {
+//     animation: onScreen $spinner-time;
+//     animation-fill-mode: forwards;
+//     width: 100vw;
+//     height: 100vh;
+//     position: absolute;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    &__spinner {
-        width: 100px;
-        height: 100px;
-        border: 3px solid;
-        border-top: black;
-        border-radius: 50%;
-        animation: spinner 2s linear infinite;
-    }
-}
+//     &__spinner {
+//         width: 100px;
+//         height: 100px;
+//         border: 3px solid;
+//         border-top: black;
+//         border-radius: 50%;
+//         animation: spinner 2s linear infinite;
+//     }
+// }

@@ -57,11 +57,11 @@
 
 @keyframes checked {
     from {
-        display: none;
+        // display: none;
         transform: scaleX(0);
     }
     to {
-        display: block;
+        // display: block;
         transform: scaleX(1);
     }
 }
