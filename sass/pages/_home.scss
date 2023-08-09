@@ -198,10 +198,6 @@
         width: 30px;
         height: 30px;
 
-        @media (min-width: 1024px) {
-            left: 413px;
-        }
-
         &:hover {
             & .heart-like {
                 fill: url(#gradient);
@@ -277,6 +273,9 @@
     position: absolute;
     top: 175px;
     left: 251px;
+    @media (min-width: 1024px) {
+        left: 413px;
+    }
 }
 
 // .body {
