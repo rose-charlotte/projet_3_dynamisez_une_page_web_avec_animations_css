@@ -29,31 +29,6 @@
     }
 }
 
-@keyframes fill {
-    from {
-        opacity: 0;
-        stroke: none;
-    }
-    to {
-        opacity: 1;
-        stroke: none;
-    }
-}
-
-@keyframes fillOut {
-    0% {
-        fill: url(#gradient);
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 0;
-        stroke: none;
-    }
-}
-
 @keyframes checked {
     from {
         // display: none;

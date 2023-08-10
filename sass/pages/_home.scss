@@ -206,9 +206,7 @@
 
         &:hover {
             & .heart-like {
-                fill: url(#gradient);
-                animation: fill 1s;
-                animation-fill-mode: both;
+                opacity: 1;
             }
         }
     }
@@ -271,9 +269,10 @@
     text-decoration: none;
 }
 
-// .heart-like {
-//     animation: fillOut 0.5s;
-// }
+.heart-like {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
 
 .icon-main {
     position: absolute;
@@ -284,27 +283,27 @@
     }
 }
 
-// .body {
-//     animation: display 0s $spinner-time;
-//     animation-fill-mode: backwards;
-// }
+.body {
+    animation: display 0s $spinner-time;
+    animation-fill-mode: backwards;
+}
 
-// .spinner-container {
-//     animation: onScreen $spinner-time;
-//     animation-fill-mode: forwards;
-//     width: 100vw;
-//     height: 100vh;
-//     position: absolute;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+.spinner-container {
+    animation: onScreen $spinner-time;
+    animation-fill-mode: forwards;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-//     &__spinner {
-//         width: 100px;
-//         height: 100px;
-//         border: 3px solid;
-//         border-top: black;
-//         border-radius: 50%;
-//         animation: spinner 2s linear infinite;
-//     }
-// }
+    &__spinner {
+        width: 100px;
+        height: 100px;
+        border: 3px solid;
+        border-top: black;
+        border-radius: 50%;
+        animation: spinner 2s linear infinite;
+    }
+}
