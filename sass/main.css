@@ -527,6 +527,13 @@ body {
   margin-top: -111px;
   margin-bottom: -125px;
 }
+.resto_photo-horizontal {
+  width: 100vw;
+  -webkit-clip-path: inset(650px 0px 782px 0px);
+          clip-path: inset(650px 0px 782px 0px);
+  margin-top: -650px;
+  margin-bottom: -782px;
+}
 .resto_name {
   font-family: "Shrikhand", cursive;
   font-size: 28px;

@@ -16,6 +16,12 @@
             margin-top: -111px;
             margin-bottom: -125px;
         }
+        &-horizontal {
+            width: 100vw;
+            clip-path: inset(650px 0px 782px 0px);
+            margin-top: -650px;
+            margin-bottom: -782px;
+        }
     }
 
     &_name {
