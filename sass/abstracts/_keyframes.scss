@@ -1,3 +1,4 @@
+/*****Animation rotation du spinner*****/
 @keyframes spinner {
     from {
         transform: rotate(0deg);
@@ -7,6 +8,7 @@
     }
 }
 
+/*****Animation affichage de la page puis disparition*****/
 @keyframes onScreen {
     0% {
         opacity: 1;
@@ -19,6 +21,7 @@
     }
 }
 
+/*****Animation affichage de la page*****/
 @keyframes display {
     from {
         visibility: hidden;
@@ -29,27 +32,7 @@
     }
 }
 
-@keyframes checked {
-    from {
-        // display: none;
-        transform: scaleX(0);
-    }
-    to {
-        // display: block;
-        transform: scaleX(1);
-    }
-}
-
-@keyframes unChecked {
-    from {
-        transform: scaleX(1);
-    }
-    to {
-        transform: scaleX(0);
-        display: none;
-    }
-}
-
+/*****Animation du prix dans menu*****/
 @keyframes checkedPrice {
     from {
         transform: translateX(50px);
@@ -59,6 +42,7 @@
     }
 }
 
+/*****Animation inverse du prix *****/
 @keyframes inverseCheckedPrice {
     from {
         transform: translateX(-50px);
@@ -68,12 +52,14 @@
     }
 }
 
+/*****Animation ... si pas assez de place*****/
 @keyframes checkedText {
     to {
         text-overflow: ellipsis;
     }
 }
 
+/*****Animation arrivée affichage plat au fure et a mesure*****/
 @keyframes arrived1 {
     from {
         transform: translateX(100%);

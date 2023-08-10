@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*****Animation rotation du spinner*****/
 @keyframes spinner {
   from {
     transform: rotate(0deg);
@@ -6,6 +8,7 @@
     transform: rotate(360deg);
   }
 }
+/*****Animation affichage de la page puis disparition*****/
 @keyframes onScreen {
   0% {
     opacity: 1;
@@ -17,6 +20,7 @@
     visibility: hidden;
   }
 }
+/*****Animation affichage de la page*****/
 @keyframes display {
   from {
     visibility: hidden;
@@ -26,46 +30,7 @@
     opacity: 1;
   }
 }
-@keyframes fill {
-  from {
-    opacity: 0;
-    stroke: none;
-  }
-  to {
-    opacity: 1;
-    stroke: none;
-  }
-}
-@keyframes fillOut {
-  0% {
-    fill: url(#gradient);
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    stroke: none;
-  }
-}
-@keyframes checked {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-@keyframes unChecked {
-  from {
-    transform: scaleX(1);
-  }
-  to {
-    transform: scaleX(0);
-    display: none;
-  }
-}
+/*****Animation du prix dans menu*****/
 @keyframes checkedPrice {
   from {
     transform: translateX(50px);
@@ -74,6 +39,7 @@
     transform: translateX(0px);
   }
 }
+/*****Animation inverse du prix *****/
 @keyframes inverseCheckedPrice {
   from {
     transform: translateX(-50px);
@@ -82,11 +48,13 @@
     transform: translateX(0px);
   }
 }
+/*****Animation ... si pas assez de place*****/
 @keyframes checkedText {
   to {
     text-overflow: ellipsis;
   }
 }
+/*****Animation arrivée affichage plat au fure et a mesure*****/
 @keyframes arrived1 {
   from {
     transform: translateX(100%);
@@ -171,6 +139,7 @@ body {
   background-color: #353535;
   color: white;
   padding: 22px 25px;
+  width: 100vw;
 }
 @media (min-width: 1024px) {
   .footer {
@@ -431,9 +400,7 @@ body {
   height: 30px;
 }
 .card__icon:hover .heart-like {
-  fill: url(#gradient);
-  animation: fill 1s;
-  animation-fill-mode: both;
+  opacity: 1;
 }
 .card__image {
   width: 340px;
@@ -499,6 +466,11 @@ body {
   text-decoration: none;
 }
 
+.heart-like {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
 .icon-main {
   position: absolute;
   top: 175px;
@@ -508,6 +480,30 @@ body {
   .icon-main {
     left: 413px;
   }
+}
+
+.body {
+  animation: display 0s 3s;
+  animation-fill-mode: backwards;
+}
+
+.spinner-container {
+  animation: onScreen 3s;
+  animation-fill-mode: forwards;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner-container__spinner {
+  width: 100px;
+  height: 100px;
+  border: 3px solid;
+  border-top: black;
+  border-radius: 50%;
+  animation: spinner 2s linear infinite;
 }
 
 .resto_photo {
