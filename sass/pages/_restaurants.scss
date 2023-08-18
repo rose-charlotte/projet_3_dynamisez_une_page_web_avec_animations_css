@@ -41,6 +41,7 @@
         background-color: $background-light-grey;
         margin-top: -55px;
         z-index: 1;
+        overflow: hidden;
 
         @media (min-width: 1024px) {
             width: 75vw;
@@ -86,19 +87,40 @@
         border-radius: 15px;
         width: 349px;
 
+        @media (min-width: 1024px) {
+            width: 634px;
+        }
+
         &-text {
             padding: 15px;
+
+            & h3 {
+                padding: unset;
+                margin: unset;
+                text-overflow: ellipsis;
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+            }
         }
 
         &-complement {
             display: flex;
             justify-content: space-between;
             font-size: 15px;
+
+            & p {
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-right: 10px;
+                padding: 0px 10px 0px 0px;
+                margin: unset;
+            }
         }
 
-        & h3,
-        p,
-        h4 {
+        & h4 {
             padding: unset;
             margin: unset;
         }
@@ -111,17 +133,17 @@
                 width: 62px;
                 transform: scaleX(1);
                 transform-origin: right;
+
+                @media (min-width: 1024px) {
+                    left: 573px;
+                }
             }
             & .resto_menu-list-item-text {
                 width: 260px;
-            }
-            & .resto_menu-list-item-text h3,
-            & .resto_menu-list-item-complement p {
-                width: 220px;
-                white-space: nowrap;
-                overflow: hidden;
-                animation: checkedText 0.5s;
-                animation-fill-mode: forwards;
+
+                @media (min-width: 1024px) {
+                    width: 545px;
+                }
             }
 
             & .resto_menu-list-item-complement h4 {
@@ -145,7 +167,11 @@
     width: 62px;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.5s linear;
+    transition: transform 0.5s;
+
+    @media (min-width: 1024px) {
+        left: 573px;
+    }
 }
 
 .resto_menu-list-item-complement h4 {

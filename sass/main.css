@@ -33,7 +33,7 @@
 /*****Animation du prix dans menu*****/
 @keyframes checkedPrice {
   from {
-    transform: translateX(50px);
+    transform: translateX(62px);
   }
   to {
     transform: translateX(0px);
@@ -46,12 +46,6 @@
   }
   to {
     transform: translateX(0px);
-  }
-}
-/*****Animation ... si pas assez de place*****/
-@keyframes checkedText {
-  to {
-    text-overflow: ellipsis;
   }
 }
 /*****Animation arrivée affichage plat au fure et a mesure*****/
@@ -71,6 +65,8 @@ body {
   margin: unset;
   padding: unset;
   font-family: "Roboto", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
 @media (min-width: 1024px) {
   body {
@@ -139,7 +135,6 @@ body {
   background-color: #353535;
   color: white;
   padding: 22px 25px;
-  width: 100vw;
 }
 @media (min-width: 1024px) {
   .footer {
@@ -148,6 +143,7 @@ body {
     flex-direction: row-reverse;
     align-items: flex-end;
     gap: 120px;
+    width: 100vw;
   }
 }
 .footer__list-container {
@@ -550,6 +546,7 @@ body {
   background-color: #f6f6f6;
   margin-top: -55px;
   z-index: 1;
+  overflow: hidden;
 }
 @media (min-width: 1024px) {
   .resto_menu {
@@ -592,16 +589,36 @@ body {
   border-radius: 15px;
   width: 349px;
 }
+@media (min-width: 1024px) {
+  .resto_menu-list-item {
+    width: 634px;
+  }
+}
 .resto_menu-list-item-text {
   padding: 15px;
+}
+.resto_menu-list-item-text h3 {
+  padding: unset;
+  margin: unset;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .resto_menu-list-item-complement {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
 }
-.resto_menu-list-item h3,
-.resto_menu-list-item p,
+.resto_menu-list-item-complement p {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+  padding: 0px 10px 0px 0px;
+  margin: unset;
+}
 .resto_menu-list-item h4 {
   padding: unset;
   margin: unset;
@@ -614,15 +631,18 @@ body {
   transform: scaleX(1);
   transform-origin: right;
 }
+@media (min-width: 1024px) {
+  .resto_menu-list-item:hover .selected {
+    left: 573px;
+  }
+}
 .resto_menu-list-item:hover .resto_menu-list-item-text {
   width: 260px;
 }
-.resto_menu-list-item:hover .resto_menu-list-item-text h3, .resto_menu-list-item:hover .resto_menu-list-item-complement p {
-  width: 220px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: checkedText 0.5s;
-  animation-fill-mode: forwards;
+@media (min-width: 1024px) {
+  .resto_menu-list-item:hover .resto_menu-list-item-text {
+    width: 545px;
+  }
 }
 .resto_menu-list-item:hover .resto_menu-list-item-complement h4 {
   transform-origin: right;
@@ -642,7 +662,12 @@ body {
   width: 62px;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.5s linear;
+  transition: transform 0.5s;
+}
+@media (min-width: 1024px) {
+  .selected {
+    left: 573px;
+  }
 }
 
 .resto_menu-list-item-complement h4 {

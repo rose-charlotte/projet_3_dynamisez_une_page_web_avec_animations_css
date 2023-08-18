@@ -35,7 +35,7 @@
 /*****Animation du prix dans menu*****/
 @keyframes checkedPrice {
     from {
-        transform: translateX(50px);
+        transform: translateX(62px);
     }
     to {
         transform: translateX(0px);
@@ -49,13 +49,6 @@
     }
     to {
         transform: translateX(0px);
-    }
-}
-
-/*****Animation ... si pas assez de place*****/
-@keyframes checkedText {
-    to {
-        text-overflow: ellipsis;
     }
 }
 

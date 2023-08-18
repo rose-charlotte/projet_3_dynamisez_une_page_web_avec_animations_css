@@ -2,7 +2,6 @@
     background-color: $background-eavy-grey;
     color: $white;
     padding: 22px 25px;
-    width: 100vw;
 
     @media (min-width: 1024px) {
         padding: 50px 0px 25px;
@@ -10,6 +9,7 @@
         flex-direction: row-reverse;
         align-items: flex-end;
         gap: 120px;
+        width: 100vw;
     }
 
     &__list-container {

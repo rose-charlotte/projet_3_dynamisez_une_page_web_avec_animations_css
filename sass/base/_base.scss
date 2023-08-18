@@ -4,6 +4,8 @@ body {
     margin: unset;
     padding: unset;
     font-family: $font-text;
+    width: 100vw;
+    overflow-x: hidden;
 
     @media (min-width: 1024px) {
         flex-wrap: wrap;
