@@ -1,26 +1,11 @@
 .resto {
     &_photo {
         width: 100vw;
-        object-fit: contain;
+        object-fit: cover;
         position: relative;
 
         @media (min-width: 1024px) {
-            clip-path: inset(260px 0px 175px);
-            margin-top: -260px;
-            margin-bottom: -175px;
-        }
-
-        &-vertical {
-            width: 100vw;
-            clip-path: inset(111px 0px 125px 0px);
-            margin-top: -111px;
-            margin-bottom: -125px;
-        }
-        &-horizontal {
-            width: 100vw;
-            clip-path: inset(650px 0px 782px 0px);
-            margin-top: -650px;
-            margin-bottom: -782px;
+            max-height: 450px;
         }
     }
 

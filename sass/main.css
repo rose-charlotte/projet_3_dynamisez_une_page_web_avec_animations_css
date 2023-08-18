@@ -401,42 +401,14 @@ body {
 .card__image {
   width: 340px;
   height: 171px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 @media (min-width: 1024px) {
   .card__image {
     width: 490px;
-  }
-}
-.card__image-horizontal {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  position: relative;
-  -webkit-clip-path: inset(60px 0px 0px round 15px 15px 0px 0px);
-          clip-path: inset(60px 0px 0px round 15px 15px 0px 0px);
-  margin-top: -60px;
-}
-@media (min-width: 1024px) {
-  .card__image-horizontal {
-    -webkit-clip-path: inset(108px 0px 55px round 15px 15px 0px 0px);
-            clip-path: inset(108px 0px 55px round 15px 15px 0px 0px);
-    margin-top: -108px;
-  }
-}
-.card__image-vertical {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  position: relative;
-  -webkit-clip-path: inset(160px 0px 96px round 15px 15px 0px 0px);
-          clip-path: inset(160px 0px 96px round 15px 15px 0px 0px);
-  margin-top: -160px;
-}
-@media (min-width: 1024px) {
-  .card__image-vertical {
-    -webkit-clip-path: inset(249px 0px 200px round 15px 15px 0px 0px);
-            clip-path: inset(249px 0px 200px round 15px 15px 0px 0px);
-    margin-top: -249px;
   }
 }
 .card__new {
@@ -504,31 +476,14 @@ body {
 
 .resto_photo {
   width: 100vw;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
 }
 @media (min-width: 1024px) {
   .resto_photo {
-    -webkit-clip-path: inset(260px 0px 175px);
-            clip-path: inset(260px 0px 175px);
-    margin-top: -260px;
-    margin-bottom: -175px;
+    max-height: 450px;
   }
-}
-.resto_photo-vertical {
-  width: 100vw;
-  -webkit-clip-path: inset(111px 0px 125px 0px);
-          clip-path: inset(111px 0px 125px 0px);
-  margin-top: -111px;
-  margin-bottom: -125px;
-}
-.resto_photo-horizontal {
-  width: 100vw;
-  -webkit-clip-path: inset(650px 0px 782px 0px);
-          clip-path: inset(650px 0px 782px 0px);
-  margin-top: -650px;
-  margin-bottom: -782px;
 }
 .resto_name {
   font-family: "Shrikhand", cursive;

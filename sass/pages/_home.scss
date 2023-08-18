@@ -214,35 +214,11 @@
     &__image {
         width: 340px;
         height: 171px;
-
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         @media (min-width: 1024px) {
             width: 490px;
-        }
-    }
-
-    &__image-horizontal {
-        width: 100%;
-        object-fit: contain;
-        position: relative;
-        clip-path: inset(60px 0px 0px round 15px 15px 0px 0px);
-        margin-top: -60px;
-
-        @media (min-width: 1024px) {
-            clip-path: inset(108px 0px 55px round 15px 15px 0px 0px);
-            margin-top: -108px;
-        }
-    }
-
-    &__image-vertical {
-        width: 100%;
-        object-fit: contain;
-        position: relative;
-        clip-path: inset(160px 0px 96px round 15px 15px 0px 0px);
-        margin-top: -160px;
-
-        @media (min-width: 1024px) {
-            clip-path: inset(249px 0px 200px round 15px 15px 0px 0px);
-            margin-top: -249px;
         }
     }
 
