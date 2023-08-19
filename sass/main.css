@@ -479,6 +479,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+  max-height: 250px;
 }
 @media (min-width: 1024px) {
   .resto_photo {
